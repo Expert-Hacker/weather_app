@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    {{>bootstraplinks}}
+    {{!-- css --}}
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: blueviolet;
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: #41295a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        }
+
+        h5 {
+
+            text-align: center;
+            color: white;
+            padding: 10px 10px;
+
+
+        }
+
+        .footer {
+            width: 100%;
+            background-color: black;
+            margin-top: auto;
+        }
+
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+<style>
+    .content {
+        display: flex;
+
+        margin: auto;
+    }
+
+    .info {
+        margin-left: 45px;
+        align-items: center justify-content:space-between;
+        margin-top: 20%;
+    }
+
+    p {
+        color: white;
+
+    }
+
+   
+</style>
+
+<body>
+    {{>navbar}}
+    <div class="content">
+        <div class="imgdiv">
+            <img src="../public/images/My.png" alt="" height="400px" width="400px">
+        </div>
+        <div class="info">
+            <h1>keerthan Acharya</h1>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, molestiae!</p>
+            </div>
+        </div>
+    </div>
+{{!-- footer --}}
+    <div class="footer">
+        <h5>Made with ❤️ By Keerthan Acharya</h5>
+
+    </div>
+</body>
+
+</html>

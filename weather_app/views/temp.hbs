@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    {{>bootstraplinks}}
+</head>
+
+<body>
+    {{>navbar}}
+    <style>
+        body {
+            color: blueviolet;
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: #41295a;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2F0743, #41295a);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2F0743, #41295a);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .main {
+
+
+
+            width: 100%;
+            display: flex;
+            margin: auto;
+
+        }
+
+        input {
+            height: 60px;
+            width: 700px;
+            display: block;
+            position: relative;
+            left: 47px;
+            margin: auto;
+            margin-top: 80px;
+            border-radius: 15px;
+            background-color: rgb(248, 217, 41);
+            
+        }
+
+        button {
+            height: 60px;
+            position: relative;
+            top: 81px;
+            right: 496px;
+            width: 100px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background-color: rgb(255, 4, 201);
+            font-size: 20px;
+            color: white;
+            font-weight: bolder;
+
+        }
+
+        .info {
+            height: 300px;
+            width: 705px;
+            border: 2px solid blueviolet;
+            margin: auto;
+            position: relative;
+            top: 10px;
+            border-radius: 10px;
+        }
+
+        h3 {
+            text-align: center;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        #city {
+            color: white;
+        }
+
+        .tym {
+            color: white;
+
+            flex-direction: row;
+
+        }
+
+        #para1 {
+            color: rgb(255, 255, 255);
+            float: left;
+            padding: 10px;
+
+        }
+
+        #para2 {
+            color: rgb(255, 255, 255);
+            display: block;
+            float: right;
+            padding: 10px;
+        }
+
+        .inside {
+
+            float: left;
+            text-align: center;
+        }
+
+        .city {
+            float: left;
+        }
+
+        .top_layer {
+            background-color: blueviolet;
+            height: 30px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+
+
+        }
+
+        .para {
+            margin: auto;
+            color: white;
+
+        }
+
+        #status {
+            font-size: 50px;
+            color: white;
+        }
+
+        #city_country {
+            color: white;
+            font-size: 30px;
+        }
+
+        .middle {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+        body{
+              display: flex;
+       flex-direction: column;
+   min-height: 100vh;
+        }
+
+        .mid {
+            text-align: center;
+
+        }
+
+        #temptarute {
+            font-size: 30px;
+            color: white;
+            display: inline-block;
+
+        }
+
+        #information {
+            text-align: center;
+            font-size: 20px;
+            color: white;
+
+        }
+
+        .super {
+            display: none;
+
+
+        }
+
+        #supid {
+            color: white;
+            font-size: 30px;
+        }
+
+        .info {
+            background-color: #250f3d;
+            margin-top: -90px;
+        }
+
+        ::placeholder {
+            padding-left: 30px;
+            font-weight: bolder;
+        }
+
+        #btn:hover {
+            background-color: #6f26bd;
+            transition: 0.4s ease-in-out;
+        }
+
+        .status1 {
+            display: none;
+            font-size: 50px;
+            color: white;
+        }
+        input{
+            text-align: center;
+        }
+
+        .status2 {
+            display: none;
+            font-size: 50px;
+            color: white;
+        }
+
+        .status3 {
+            display: none;
+            font-size: 50px;
+            color: white;
+        }
+
+        .status4 {
+            display: none;
+            font-size: 50px;
+            color: white;
+        }
+            .status5 {
+            display: none;
+            font-size: 50px;
+            color: white;
+        }
+
+
+        .footer {
+            width: 100%;
+            background-color: black;
+            margin-top: auto;
+            color: white;
+            text-align: center;
+        }
+        h5{
+            padding: 10px 10px;
+        }
+        #inp{
+            font-weight: bold;
+            font-size: 25px;
+        }
+    </style>
+    <div class="main">
+        <input id="inp" type="text" placeholder="Enter City Name">
+        <button id="btn">SUBMIT</button>
+    </div>
+
+
+    <div class="info">
+        <div class="top_layer">
+            <p class="para" id="day"></p>
+            <p class="para" id="tym"></p>
+        </div>
+
+        <div class="middle">
+            <span id="status1" class="overcast status1"><i class="fas fa-cloud-sun"></i></span>
+            <span id="status2" class="cloud status2"> <i class="fas fa-cloud"></i></span>
+
+            <span id="status3" class="rain status3"><i class="fas fa-cloud-showers-heavy"></i></span>
+            <span id="status4" class="broken status4"><i class="fab fa-soundcloud"></i></span>
+              <span id="status5" class="clear_sky status5"> <i class="fas fa-house-day"></i></span>
+           
+            <div class="city_country_staus">
+                <h4 id="city_country">
+
+                </h4>
+            </div>
+        </div>
+
+        <div class="bottom mid">
+            <div class="temprature">
+                <h5 id="temptarute"></h5> &nbsp;<span class="super" id="supid"><sup>o</sup>C</span>
+            </div>
+            <div class="information">
+                <p id="information"></p>
+            </div>
+        </div>
+
+    </div>
+    {{!-- javacript --}}
+    <script>
+        let flag = 0;
+
+        let btn = document.getElementById('btn');
+        let input = document.getElementById('inp');
+        let temp = document.getElementById('temptarute');
+        let city = document.getElementById('city');
+
+        let country = document.getElementById('city_country');
+        let weather = document.getElementById('weather');
+        let day = document.getElementById('day');
+        let hrsmins = document.getElementById('tym');
+        let information = document.getElementById('information');
+
+        let status1 = document.getElementById('status1');
+        let status2 = document.getElementById('status2');
+        let status3 = document.getElementById('status3');
+        let status4 = document.getElementById('status4');
+          let status5 = document.getElementById('status5');
+        let super1 = document.getElementById('supid');
+
+        let date = new Date();
+
+        let hrs = date.getHours();
+        let mins = date.getMinutes();
+        let days = date.getVarDate;
+
+        days = date.toLocaleString("default", { weekday: "long" })
+
+        console.log(days)
+        async function fun() {
+            
+     inputval = input.value;
+               
+            flag = 1;
+
+
+          
+
+            
+            let ur = `http://api.openweathermap.org/data/2.5/weather?q=${inputval}&appid=292af1497eb86f3600cb8732abce11a6`;
+            hrsmins.innerText = `${hrs}:${mins}`;
+            day.innerText = days;
+
+            super1.style["display"] = "inline-block";
+          
+
+            
+            let res = await fetch(ur);
+          
+            res = await res.json();
+            
+            res = [res];
+           
+           
+            let temp1 = res[0].main.temp;
+
+            temp1 = temp1 - 273.15;
+            temp1 = Math.floor(temp1);
+         
+            temp.innerHTML = `${temp1}`;
+
+            let city1 = res[0].name;
+            let country1 = res[0].sys.country;
+            country.innerText = `${city1},${country1}`;
+
+            let information1 = res[0].weather[0].description;
+            information.innerText = information1;
+
+        
+      
+          
+
+            if (information1 == "overcast clouds") {
+                status1.style["display"] = "inline-block";
+            }
+              else if (information1 == "scattered clouds") {
+                status1.style["display"] = "inline-block";
+            }
+            else if (information1 == "Clouds") {
+                status2.style["display"] = "inline-block";
+            }
+            else if (information1 == "Rain") {
+                status3.style["display"] = "inline-block";
+            }
+            else if (information1 == "heavy intensity rain") {
+                status3.style["display"] = "inline-block";
+            }
+            else if (information1 == "broken clouds") {
+                status4.style["display"] = "inline-block";
+            }
+             else if (information1 == "clear sky") {
+                status5.style["display"] = "inline-block";
+            }
+         
+
+
+
+
+
+
+
+
+
+
+
+            city.innerText = city1;
+            console.log(city1)
+
+
+            let weather1 = res[0].weather[0].main;
+
+
+        }
+
+
+
+
+        btn.addEventListener('click', fun)
+
+
+
+
+
+    </script>
+    <div class="footer">
+        <h5>Made with ❤️ By Keerthan Acharya</h5>
+    </div>
+</body>
+
+</html>
